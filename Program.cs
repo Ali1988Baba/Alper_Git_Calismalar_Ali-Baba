@@ -5,13 +5,18 @@
         static void Main(string[] args)
         { 
             //Kim Milyoner Olmak İster??
-            Console.WriteLine("Kim Milyoner Olmak İster\n");
-            Console.WriteLine("Kim Milyoner Olmak İster\n");
+            Console.WriteLine("Kim Milyoner Olmak İster");
+
+            #region Entry_Information
             Console.Write("İsim Giriniz: ");
             string isim = Console.ReadLine();
+
             Console.Write("Soyisim Giriniz: ");
-            string soyisim = Console.ReadLine();
-            Console.Write("\n1.Telefon Jokerinizi Giriniz: ");
+            string soyisim =Console.ReadLine();
+            #endregion
+
+
+            Console.Write("1.Telefon Jokerinizi Giriniz: ");
             string telefonJoker1 = Console.ReadLine();
             Console.Write("2.Telefon Jokerinizi Giriniz: ");
             string telefonJoker2 = Console.ReadLine();
