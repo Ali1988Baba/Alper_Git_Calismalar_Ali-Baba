@@ -3,9 +3,11 @@
     internal class Program
     {
         static void Main(string[] args)
-        { 
+        {
+            #region Competition_Title
             //Kim Milyoner Olmak İster??
             Console.WriteLine("Kim Milyoner Olmak İster");
+            #endregion
 
             #region Entry_Information
             Console.Write("İsim Giriniz: ");
@@ -15,6 +17,7 @@
             string soyisim =Console.ReadLine();
             #endregion
 
+            #region Joker_Definition
 
             Console.Write("1.Telefon Jokerinizi Giriniz: ");
             string telefonJoker1 = Console.ReadLine();
@@ -22,7 +25,13 @@
             string telefonJoker2 = Console.ReadLine();
             Console.Write("3.Telefon Jokerinizi Giriniz: ");
             string telefonJoker3 = Console.ReadLine();
+
+            #endregion
+
             Console.Clear();
+
+            #region Competition_Start_Entry
+
             Console.WriteLine("Hoşgeldiniz " + isim + " " + soyisim);
 
             Console.Write("Kuralları Biliyor Musunuz? : ");
@@ -42,6 +51,11 @@
                 Console.WriteLine("Hazır olduğunuzda Enter'a Basın");
                 Console.ReadLine();
             }
+
+            #endregion
+
+            #region Competition_Variables
+
             bool seyirciHak = true, yuzdeHak = true, telefonHak = true;
             int kasa = 0;
 
@@ -50,7 +64,10 @@
             bool gizleA, gizleB, gizleC, gizleD;
             string soru, a, b, c, d;
             char cevap;
-            #region Soru Bilgileri
+
+            #endregion
+
+            #region Question_İnfo
             soruNo = 1;
             soru = "Türkiyenin Başkenti Neresidir?";
             a = "Ankara";
@@ -69,6 +86,8 @@
             gizleA = false; gizleB = false;
             gizleC = false; gizleD = false;
         #endregion
+
+            #region Question_Draft
         // Soru Kalıbı
         soruNoktasi:
             Console.Clear();
@@ -158,6 +177,7 @@
                 //return;
                 Environment.Exit(0);
             }
+            #endregion
 
             kasa = odul;
             Console.WriteLine("Tebrikler, Kazandığınız Tutar: " + kasa + " TL");
