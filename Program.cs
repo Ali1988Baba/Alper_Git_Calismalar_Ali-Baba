@@ -179,10 +179,15 @@
             }
             #endregion
 
+            #region Reward
+
             kasa = odul;
             Console.WriteLine("Tebrikler, Kazandığınız Tutar: " + kasa + " TL");
             Console.WriteLine("\nSonraki Soruya Geçmek  İçin Enter'a Basın..");
             Console.ReadLine();
+
+            #endregion
+
 
         }
     }
